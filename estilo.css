@@ -7,6 +7,18 @@ h1 {
     color: rgb(255, 123, 0);
 }
 
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
 p {
     color: #333;
 }
