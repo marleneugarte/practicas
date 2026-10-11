@@ -22,3 +22,13 @@ nav {
 p {
     color: #333;
 }
+.boton-modo{
+    margin-top: 14px;
+    background-color: rgb(255, 217, 0);
+    color: rgba(0, 0, 0, 0.96);
+    border: none;
+    border-radius: 20px;
+    padding: 8px 18px;
+    font: inherit;
+    font-weight: bold;
+}
