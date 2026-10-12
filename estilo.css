@@ -1,3 +1,5 @@
+
+
 body {
     background-color: #f2f2f2;
     font-family: Arial, sans-serif;
@@ -22,6 +24,129 @@ nav {
 p {
     color: #333;
 }
+ body {
+        font-family: Arial, sans-serif;
+        background-color: #fff3e0;
+        color: #333333;
+        margin: 0;
+        padding: 20px;
+    }
+
+    /* Encabezado */
+    h1 {
+        background-color: #c62828;
+        color: white;
+        text-align: center;
+        padding: 25px;
+        border-radius: 15px;
+    }
+
+    h2 {
+        color: #e65100;
+        text-align: center;
+    }
+
+    /* Formulario */
+    form {
+        background-color: white;
+        max-width: 650px;
+        margin: 20px auto;
+        padding: 25px;
+        border: 3px solid #ff9800;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px #00000020;
+    }
+
+    /* Secciones */
+    fieldset {
+        border: 2px solid #e65100;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    legend {
+        color: #c62828;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    /* Etiquetas */
+    label {
+        font-weight: bold;
+        display: inline-block;
+        margin-bottom: 8px;
+    }
+
+    /* Campos de texto y listas */
+    input[type="text"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="number"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #bbbbbb;
+        border-radius: 7px;
+        box-sizing: border-box;
+        font-size: 15px;
+    }
+
+    /* Cuando seleccionas un campo */
+    input:focus,
+    select:focus,
+    textarea:focus {
+        border-color: #ff9800;
+        outline: 2px solid #ffe0b2;
+    }
+
+    /* Casillas de selección */
+    input[type="checkbox"],
+    input[type="radio"] {
+        accent-color: #c62828;
+    }
+
+    /* Botones */
+    button {
+        padding: 12px 20px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+    /* Botón registrar */
+    .registrar[type="submit"] {
+        background-color: #c62828;
+        color: white;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #8e0000;
+    }
+
+    /* Botón limpiar */
+    .limpiar[type="reset"] {
+        background-color: #ffb300;
+        color: #333333;
+    }
+
+    button[type="reset"]:hover {
+        background-color: #ff8f00;
+    }
+
+    /* Texto inferior */
+    footer {
+        text-align: center;
+        color: #777777;
+        margin-top: 20px;
+    }
+
+    /* Adaptación para celulares */
+  
 .boton-modo{
     margin-top: 14px;
     background-color: rgb(255, 217, 0);
@@ -31,4 +156,18 @@ p {
     padding: 8px 18px;
     font: inherit;
     font-weight: bold;
+}
+
+#btn-menu{
+    display: none;
+}
+.hamburguesa {
+margin: 0 auto 8px;
+background-color: aqua;
+color: black;
+border: 1px solid #903737;
+border-radius: 6px;
+padding: 8px 16px;
+font: inherit;
+font-weight: bold;
 }

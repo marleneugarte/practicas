@@ -9,26 +9,32 @@
 </head>
 <body>
      
-     <header> 
+    <header> 
         <h1> BROASTERÍA FRESPOLLO </h1> 
         <p>El sabor que te hace volver</p> 
-        <button type="button" id="btn-tema" class="boton-modo">Modo día </button>
-        <nav> 
-            <a href="#inicio">Inicio</a> | <a href="#menu">Menú</a> | <a href="#promociones">Promociones</a> | <a href="#nosotros">Nosotros</a> | <a href="#contacto">Contacto</a> 
-        </nav> 
+        <button type="button" id="btn-tema" class="boton-modo"> ☀️ Modo dia </button>       
     </header>
-     <hr>
-      <section id="inicio">
-         <h2>Bienvenidos a FresPollo</h2> 
-         <p> Disfruta nuestro delicioso pollo broaster, preparado con ingredientes frescos y mucho sabor. 
-
-         </p> 
-            <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec" alt="Pollo frito" width="400"> 
-         <p> 
-            <a href="#menu">Ver nuestro menú</a> 
-        </p> 
+    <br>
+    <nav> 
+        <button type="button" id="btn-menu" class="hamburguesa"> ☰ Menu</button>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#promociones">Promociones</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#pedido">Pedido</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <!-- <a href="#inicio">Inicio</a> | <a href="#menu">Menú</a> | <a href="#promociones">Promociones</a> | <a href="#nosotros">Nosotros</a> | <a href="#pedido">Pedido</a> | <a href="#contacto">Contacto</a> -->
+    </nav> 
+    <hr>
+    <section id="inicio">
+       <h2>Bienvenidos a FresPollo</h2> 
+       <p> Disfruta nuestro delicioso pollo broaster, preparado con ingredientes frescos y mucho sabor. 
+       </p> 
+          <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec" alt="Pollo frito" width="400"> 
     </section> 
-    <hr> <!-- MENÚ --> 
+    <hr>  
     <section id="menu"> 
         <h2> Nuestro Menú</h2> 
         <h3>Pollo Broaster</h3> 
@@ -76,7 +82,8 @@
             <p> 1/4 Pollo + papas + bebida </p> 
             <p><strong>30 Bs</strong></p> 
         </article> 
-    </section> <hr>  
+    </section> 
+    <hr>  
     <section id="nosotros"> 
         <h2> Sobre Nosotros</h2> 
         <p> En Broastería FresPollo nos encanta preparar comida deliciosa para compartir con familia y amigos. </p> 
@@ -88,56 +95,157 @@
             <li> Sabor casero</li> 
             <li> Atención cercana</li> 
             <li> Precios accesibles</li> 
-        </ul> </section> <hr>  
-        <section> <h2> Horarios de Atención</h2> 
-            <table border="1"> 
-                <tr> 
-                    <th>Día</th> 
-                    <th>Horario</th> 
-                </tr> 
-                <tr> 
-                    <td>Lunes</td> 
-                    <td>12:00 - 22:00</td> 
-                </tr> 
-                <tr> 
-                    <td>Martes</td> 
-                    <td>12:00 - 22:00</td> 
-                </tr> 
-                <tr> 
-                    <td>Miércoles</td> 
-                    <td>12:00 - 22:00</td> 
-                </tr> 
-                <tr> 
-                    <td>Jueves</td> 
-                    <td>12:00 - 22:00</td>
-                </tr> 
-                <tr> 
-                    <td>Viernes</td> 
-                    <td>12:00 - 23:00</td>
-                </tr> 
-                <tr> 
-                    <td>Sábado</td> 
-                    <td>12:00 - 23:00</td> 
-                </tr> 
-                <tr> 
-                    <td>Domingo</td> 
-                    <td>12:00 - 21:00</td> 
-                </tr> 
-            </table> 
-        </section> 
-        <hr>  
-        <section id="contacto"> 
-            <h2> Contáctanos</h2> 
-            <p>¿Quieres hacer un pedido o reservar?</p> 
-            <p>  Teléfono: +591 72345678 </p> 
-            <p>  Dirección: Cochabamba , Bolivia </p> 
-            <p>  Email: contacto@frespollo.bo </p> 
-             <footer> 
-                <h3> Broastería FresPollo</h3> 
-                <p> El sabor que te hace volver. </p> 
-                <p> © Marlene Ugarte Galarza </p> 
-            </footer>
-        </section>
-        <script src="script.js"></script>
+        </ul> 
+    </section> 
+    <hr>  
+    <section> 
+        <h2> Horarios de Atención</h2> 
+        <table border="1"> 
+            <tr> 
+                <th>Día</th> 
+                <th>Horario</th> 
+            </tr> 
+            <tr> 
+                <td>Lunes</td> 
+                <td>12:00 - 22:00</td> 
+            </tr> 
+            <tr> 
+                <td>Martes</td> 
+                <td>12:00 - 22:00</td> 
+            </tr> 
+            <tr> 
+                <td>Miércoles</td> 
+                <td>12:00 - 22:00</td> 
+            </tr> 
+            <tr> 
+                <td>Jueves</td> 
+                <td>12:00 - 22:00</td>
+            </tr> 
+            <tr> 
+                <td>Viernes</td> 
+                <td>12:00 - 23:00</td>
+            </tr> 
+            <tr> 
+                <td>Sábado</td> 
+                <td>12:00 - 23:00</td> 
+            </tr> 
+            <tr> 
+                <td>Domingo</td> 
+                <td>12:00 - 21:00</td> 
+            </tr> 
+        </table> 
+    </section> 
+    <hr>  
+    <section id="pedido"> 
+        <h2> Realizar pedido</h2> 
+        <form action="#" method="post">
+
+            <fieldset>
+                <legend>Datos del cliente</legend>
+
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br><br>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                <br><br>
+
+                <label for="fecha">Fecha del pedido:</label>
+                <input type="date" id="fecha" name="fecha" required>
+                <br><br>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Detalle del pedido</legend>
+
+                <label for="menu">Seleccione su menú:</label>
+                <select id="menu" name="menu" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="pollo_entero">Pollo entero</option>
+                    <option value="medio_pollo">Medio pollo</option>
+                    <option value="cuarto_pollo">Cuarto de pollo</option>
+                </select>
+                <br><br>
+
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" required>
+                <br><br>
+
+                <label>Acompañamientos:</label>
+                <br>
+                <input type="checkbox" id="papas" name="acompanamientos"
+                       value="papas">
+                <label for="papas">Papas fritas</label>
+                <br>
+
+                <input type="checkbox" id="arroz" name="acompanamientos"
+                       value="arroz">
+                <label for="arroz">Arroz</label>
+                <br><br>
+
+                <label for="bebida">Bebida:</label>
+                <select id="bebida" name="bebida">
+                    <option value="ninguna">Sin bebida</option>
+                    <option value="coca_cola">Coca-Cola</option>
+                    <option value="fanta">Fanta</option>
+                    <option value="sprite">Sprite</option>
+                </select>
+                <br><br>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Entrega y pago</legend>
+
+                <label>Tipo de pedido:</label>
+                <br>
+                <input type="radio" id="local" name="entrega" value="local" required>
+                <label for="local">Consumir en el local</label>
+                <br>
+
+                <input type="radio" id="llevar" name="entrega" value="llevar">
+                <label for="llevar">Para llevar</label>
+                <br><br>
+
+                <label for="pago">Método de pago:</label>
+                <select id="pago" name="pago" required>
+                    <option value="">Seleccione el pago</option>
+                    <option value="efectivo">Efectivo</option>
+                    <option value="transferencia">Transferencia</option>
+                </select>
+                <br><br>
+            </fieldset>
+
+            <br>
+
+            <label for="observaciones">Observaciones del pedido:</label>
+            <br>
+            <textarea id="observaciones" name="observaciones" rows="4" cols="40" placeholder="Ejemplo: sin picante, sin mayonesa..."></textarea>
+
+            <br><br>
+
+            <button type="submit" id="btn-registrar" class="registrar">Registrar pedido</button>
+            <button type="reset" id="btn-limpiar" class="limpiar">Limpiar formulario</button>
+
+        </form>
+    </section>
+    <hr>  
+    <section id="contacto"> 
+        <h2> Contáctanos</h2> 
+        <p>¿Quieres hacer un pedido o reservar?</p> 
+        <p>  Teléfono: +591 72345678 </p> 
+        <p>  Dirección: Cochabamba , Bolivia </p> 
+        <p>  Email: contacto@frespollo.bo </p> 
+         <footer> 
+            <h3> Broastería FresPollo</h3> 
+            <p> El sabor que te hace volver. </p> 
+            <p> © Marlene Ugarte Galarza </p> 
+        </footer>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
