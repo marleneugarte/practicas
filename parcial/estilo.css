@@ -1,4 +1,5 @@
 
+
 /* ESTILOS GENERALES */
 * {
     box-sizing: border-box;
@@ -11,202 +12,178 @@ html {
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #fff8f6;
-    color: #4b2929;
+    background-color: #fff8fa;
+    color: #37483a;
     line-height: 1.6;
 }
 
 /* ENCABEZADO */
 header {
-    background-color: #f9dfe3;
+    background-color: #e8f3e8;
     text-align: center;
-    padding: 25px 15px;
-    border-bottom: 3px solid #d98b9b;
+    padding: 25px;
+    border-bottom: 3px solid #9dbb9b;
 }
 
 header h1 {
+    color: #315c3b;
     font-family: Georgia, serif;
-    font-size: 38px;
-    color: #702c37;
-    margin: 0;
-}
-
-header p {
-    color: #8b4a56;
-    font-style: italic;
-    margin: 5px 0 20px;
+    font-size: 36px;
+    margin: 0 0 15px;
 }
 
 /* MENU DE NAVEGACION */
-nav {
-    margin-top: 15px;
-}
-
 nav a {
     display: inline-block;
-    color: #702c37;
     text-decoration: none;
+    color: #315c3b;
     font-weight: bold;
-    padding: 10px 16px;
+    padding: 10px 18px;
     margin: 5px;
     border-radius: 20px;
     transition: 0.3s;
 }
 
 nav a:hover {
-    background-color: #bd405c;
+    background-color: #4f8057;
     color: white;
 }
 
 /* CONTENIDO PRINCIPAL */
 main {
-    max-width: 1100px;
-    margin: auto;
-    padding: 25px;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
 }
 
 section {
-    padding: 35px 15px;
-    margin-bottom: 20px;
-    text-align: center;
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    border: 1px solid #f0dce2;
+    box-shadow: 0 4px 12px #0000000d;
     scroll-margin-top: 20px;
 }
 
 section h2 {
-    color: #9e354d;
+    color: #b34f70;
     font-family: Georgia, serif;
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 0;
 }
 
-section p {
-    font-size: 16px;
+/* LISTA DE ARREGLOS */
+#arreglos p {
+    text-align: center;
 }
 
-/* IMAGEN PRINCIPAL */
-#inicio img {
-    width: 100%;
-    max-width: 600px;
-    height: 320px;
-    object-fit: cover;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px #00000020;
-    margin: 15px 0;
+#arreglos ul {
+    max-width: 500px;
+    margin: 20px auto 0;
+    padding: 20px 20px 20px 45px;
+    background-color: #fff0f4;
+    border-radius: 12px;
 }
 
-/* ENLACES COMO BOTONES */
-#inicio > a,
-article a {
-    display: inline-block;
-    background-color: #bd405c;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 25px;
-    text-decoration: none;
+#arreglos li {
+    padding: 10px;
+    border-bottom: 1px solid #f0d5df;
+}
+
+#arreglos li:last-child {
+    border-bottom: none;
+}
+
+/* FORMULARIO */
+#contacto form {
+    max-width: 550px;
+    margin: auto;
+}
+
+#contacto label {
+    display: block;
+    margin-bottom: 6px;
     font-weight: bold;
+    color: #315c3b;
+}
+
+#contacto input,
+#contacto textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #c8d8c8;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: #fffdfd;
+}
+
+#contacto textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#contacto input:focus,
+#contacto textarea:focus {
+    outline: 2px solid #9dbb9b;
+    border-color: #4f8057;
+}
+
+/* BOTON DE PEDIDO */
+#btn-confirmar {
+    display: block;
+    margin: 10px auto;
+    padding: 13px 28px;
+    background-color: #b34f70;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
     transition: 0.3s;
 }
 
-#inicio > a:hover,
-article a:hover {
-    background-color: #84283d;
+#btn-confirmar:hover {
+    background-color: #8f3655;
     transform: translateY(-2px);
 }
 
-/* PRODUCTOS */
-#productos {
-    background-color: #fff0f1;
-    border-radius: 20px;
+/* MENSAJE DE CONFIRMACION */
+#mensaje {
+    text-align: center;
+    color: #315c3b;
+    font-weight: bold;
 }
 
-article {
-    display: inline-block;
-    vertical-align: top;
-    width: 45%;
-    max-width: 420px;
-    margin: 12px;
-    padding: 18px;
-    background-color: white;
-    border: 1px solid #f2d0d6;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px #00000010;
-    transition: 0.3s;
-}
-
-article:hover {
-    box-shadow: 0 8px 20px #8b35451f;
-    transform: translateY(-5px);
-}
-
-article h3 {
-    color: #8e3448;
-    font-family: Georgia, serif;
-    font-size: 22px;
-}
-
-article img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-article p {
-    margin: 10px 0;
-}
-
-/* SOBRE NOSOTROS */
-#nosotros {
-    background-color: #fbe4e7;
-    border-radius: 20px;
-    padding: 35px;
-}
-
-/* CONTACTO */
-#contacto {
-    background-color: white;
-    border: 1px solid #f0d1d6;
-    border-radius: 20px;
-}
-
-#contacto ul {
-    display: inline-block;
-    text-align: left;
-    padding-left: 25px;
-}
-
-#contacto li {
-    margin: 10px 0;
-}
-
-/* LINEAS DIVISORIAS */
-hr {
-    border: none;
-    border-top: 1px solid #e6b7c0;
+.oculto {
+    display: none;
 }
 
 /* PIE DE PAGINA */
 footer {
-    background-color: #542e2d;
+    background-color: #315c3b;
     color: white;
     text-align: center;
-    padding: 25px 15px;
-}
-
-footer h3 {
-    font-family: Georgia, serif;
-    font-size: 25px;
-    margin-bottom: 5px;
+    padding: 20px;
+    margin-top: 30px;
 }
 
 footer p {
-    margin: 5px;
+    margin: 0;
 }
 
 /* ADAPTACION A CELULARES */
 @media (max-width: 600px) {
+    header {
+        padding: 20px 10px;
+    }
+
     header h1 {
-        font-size: 29px;
+        font-size: 27px;
     }
 
     nav a {
@@ -215,33 +192,23 @@ footer p {
     }
 
     main {
-        padding: 12px;
+        padding: 0 12px;
+        margin: 20px auto;
     }
 
     section {
-        padding: 25px 10px;
+        padding: 20px 15px;
     }
 
     section h2 {
-        font-size: 25px;
+        font-size: 24px;
     }
 
-    #inicio img {
-        height: auto;
-    }
-
-    article {
-        display: block;
+    #btn-confirmar {
         width: 100%;
-        max-width: 100%;
-        margin: 15px 0;
     }
 
-    article img {
-        height: 220px;
-    }
-
-    #nosotros {
-        padding: 20px;
+    footer {
+        font-size: 14px;
     }
 }
