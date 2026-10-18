@@ -138,7 +138,7 @@
     <hr>  
     <section id="pedido"> 
         <h2> Realizar pedido</h2> 
-        <form action="#" method="post">
+        <form novalidate id="form-pedido" >
 
             <fieldset>
                 <legend>Datos del cliente</legend>
@@ -147,89 +147,20 @@
                 <input type="text" id="nombre" name="nombre" required>
                 <br><br>
 
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" required>
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
                 <br><br>
+                <label for="pedido">Detalle pedido:</label>
+                <textarea id="pedido" name="pedido" rows="4" placeholder="Cuentanos que necesitas..."></textarea>
 
-                <label for="fecha">Fecha del pedido:</label>
-                <input type="date" id="fecha" name="fecha" required>
-                <br><br>
             </fieldset>
-
+            
             <br>
-
-            <fieldset>
-                <legend>Detalle del pedido</legend>
-
-                <label for="menu">Seleccione su menú:</label>
-                <select id="menu" name="menu" required>
-                    <option value="">Seleccione una opción</option>
-                    <option value="pollo_entero">Pollo entero</option>
-                    <option value="medio_pollo">Medio pollo</option>
-                    <option value="cuarto_pollo">Cuarto de pollo</option>
-                </select>
-                <br><br>
-
-                <label for="cantidad">Cantidad:</label>
-                <input type="number" id="cantidad" name="cantidad" min="1" required>
-                <br><br>
-
-                <label>Acompañamientos:</label>
-                <br>
-                <input type="checkbox" id="papas" name="acompanamientos"
-                       value="papas">
-                <label for="papas">Papas fritas</label>
-                <br>
-
-                <input type="checkbox" id="arroz" name="acompanamientos"
-                       value="arroz">
-                <label for="arroz">Arroz</label>
-                <br><br>
-
-                <label for="bebida">Bebida:</label>
-                <select id="bebida" name="bebida">
-                    <option value="ninguna">Sin bebida</option>
-                    <option value="coca_cola">Coca-Cola</option>
-                    <option value="fanta">Fanta</option>
-                    <option value="sprite">Sprite</option>
-                </select>
-                <br><br>
-            </fieldset>
-
-            <br>
-
-            <fieldset>
-                <legend>Entrega y pago</legend>
-
-                <label>Tipo de pedido:</label>
-                <br>
-                <input type="radio" id="local" name="entrega" value="local" required>
-                <label for="local">Consumir en el local</label>
-                <br>
-
-                <input type="radio" id="llevar" name="entrega" value="llevar">
-                <label for="llevar">Para llevar</label>
-                <br><br>
-
-                <label for="pago">Método de pago:</label>
-                <select id="pago" name="pago" required>
-                    <option value="">Seleccione el pago</option>
-                    <option value="efectivo">Efectivo</option>
-                    <option value="transferencia">Transferencia</option>
-                </select>
-                <br><br>
-            </fieldset>
-
-            <br>
-
-            <label for="observaciones">Observaciones del pedido:</label>
-            <br>
-            <textarea id="observaciones" name="observaciones" rows="4" cols="40" placeholder="Ejemplo: sin picante, sin mayonesa..."></textarea>
-
-            <br><br>
 
             <button type="submit" id="btn-registrar" class="registrar">Registrar pedido</button>
             <button type="reset" id="btn-limpiar" class="limpiar">Limpiar formulario</button>
+            <br>
+            <p id="aviso" class="aviso"></p>
 
         </form>
     </section>
