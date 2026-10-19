@@ -23,3 +23,29 @@ function alternarMenu(){
 
 }
 botonMenu.addEventListener("click", alternarMenu);
+/*mensaje de error o aceptacion*/
+const formularioPedido=document.querySelector("#form-pedido");
+const avisoPedido=document.querySelector("#error-pedido");
+function revisarPedido(event){
+    event.preventDefault();
+
+
+    const nombre=document.querySelector("#nombre").value;
+    const correo=document.querySelector("#correo").value;
+
+    if (nombre===""){
+        avisoPedido.textContent="Debe ingresar su nombre y apellido";
+        avisoPedido.classList.add("error");
+        avisoPedido.classList.remove("exito");
+    }
+    else if (correo.includes("@")===false){
+        avisoPedido.textContent="El correo ingresado no parece correo:le falta @. ";
+        avisoPedido.classList.add("error");
+        avisoPedido.classList.remove("exito");
+    }else{
+        avisoPedido.textContent="Pedido realizado con exitoen un momento le contactamos";
+        avisoPedido.classList.add("exito");
+        avisoPedido.classList.remove("error");
+    }
+}
+formularioPedido.addEventListener("submit", revisarPedido);
