@@ -25,4 +25,4 @@ function reservarTurno(event){
         avisoTurno.classList.remove("error");
     }
 }
-formularioTurno.addEventListener("submit", revisarPedido);
+formularioTurno.addEventListener("submit", reservarTurno);
