@@ -6,7 +6,7 @@ $correo=$_POST['correo'];
 $mascota=$_POST['mascota'];
 echo"<p>Nombre: $nombre</P>";
 echo"<p>Correo: $correo</P>";
-echo"<p>Mascota: $mascota</P>";ç
+echo"<p>Mascota: $mascota</P>";
 $servicios = [
     "Consulta general - Bs 60",
     "Vacuna antirrabica - Bs 40",
