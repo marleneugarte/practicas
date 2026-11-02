@@ -1,19 +1,20 @@
 
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar sesión - Broastería</title>
+    <title>Joyeria La Esmeralda</title>
 </head>
 <body>
 
-    <h1>Broastería Frespollo</h1>
+    <h1>Joyeria La Esmeralda</h1>
     <h2>Iniciar sesión</h2>
 
     <form action="/login" method="post">
         @csrf
-        <h3>Solo el administrador puede registrar y ver los pedidos</h3>
+        <h3>Solo el administrador puede registrar las joyas</h3>
 
   {{-- Si el intento anterior falló, la ruta nos mandó el mensaje "en el bolsillo"
        de la sesión. Se muestra una vez y desaparece solo. --}}
@@ -39,12 +40,12 @@
 
     </form>
     <br>
-    <form action="/logout" method="POST">
+    <form action="/salir" method="POST">
     @csrf
     <button type="submit">Volver</button>
 
     <footer>
-    <p> El sabor que te hace volver  - © Marlene Ugarte Galarza </p> 
+    <p> los mejores diseños - © Marlene Ugarte Galarza </p> 
     </footer>
 </body>
  

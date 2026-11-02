@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
 //joyeria la esmeralda
+Route::redirect('/', '/joyas');
 
 Route::get('/joyas', function () {
     $joyas = joya::all();
@@ -45,9 +46,15 @@ Route::post('/joyas/nuevo', function () {
     return redirect('/joyas');
 })->middleware('auth'); 
 
+Route::post('/salir', function () {
+    Auth::logout();
+
+    return redirect('/joyas');
+});
 
 
-Route::redirect('/', '/inicio');
+
+//Route::redirect('/', '/inicio');
 
 Route::get('/hola', function () {
     return 'Hola, soy Laravel — y esta respuesta viajó por una ruta.';
