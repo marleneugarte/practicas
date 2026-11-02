@@ -27,7 +27,7 @@
   </main>
 
   <footer>
-    <p> El sabor que te hace volver  - © Marlene Ugarte Galarza </p> 
+    <p> las mejores joyas - © Marlene Ugarte Galarza </p> 
   </footer>
 </body>
 </html>

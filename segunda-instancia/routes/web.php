@@ -10,18 +10,31 @@ use Illuminate\Support\Facades\Auth;
 Route::get('/joyas', function () {
     $joyas = joya::all();
     return view('joyas', ['joyas' => $joyas]);   // igual que en la clase 11: los datos viajan a la vista
-});//->middleware('auth');
+});
 
 // 5) MOSTRAR EL FORMULARIO: esta ruta solo pinta la página, no guarda nada.
 //    Fijate que la URL es la misma de abajo, pero el método es GET (entrar a ver).
 Route::get('/joyas/nuevo', function () {
     return view('joyasNuevo');
-});//->middleware('auth'); 
+})->middleware('auth'); 
 
 
 Route::post('/joyas/nuevo', function () {
     // request()->input('nombre') = "traeme lo que venía en el campo name="nombre"".
     // Es el $_POST['nombre'] de la clase 10, con mejor nombre.
+     request()->validate([
+    'pieza' => 'required',
+    'metal' => 'required',
+    'precio' => 'required|integer',
+    ], [
+        // Los reclamos, en castellano y en nuestras palabras. Si no ponés esto,
+        // Laravel los escribe solo... pero en inglés.
+        'pieza.required' => 'El nombre no puede quedar vacío.',
+        'metal.required' => 'El metal no puede quedar vacío.',
+        'precio.required' => 'El precio no puede quedar vacío.',
+        'precio.integer' => 'El precio tiene que ser un número entero, sin letras.',
+    ]);
+
     Joya::create([
         'pieza' => request()->input('pieza'),
         'metal' => request()->input('metal'),
@@ -30,7 +43,7 @@ Route::post('/joyas/nuevo', function () {
 
     // Guardado el dato, mandamos al usuario a la lista para que lo vea ahí.
     return redirect('/joyas');
-});//->middleware('auth'); 
+})->middleware('auth'); 
 
 
 
@@ -143,7 +156,7 @@ Route::post('/login', function () {
         // Sesión nueva apenas entra: si alguien espiaba la anterior, ya no le sirve.
         request()->session()->regenerate();
 
-        return redirect('/pedidos/nuevo');
+        return redirect('/joyas/nuevo');
     }
 
     // back() = "volvé a la página de donde veníamos", con un mensaje en el bolsillo.

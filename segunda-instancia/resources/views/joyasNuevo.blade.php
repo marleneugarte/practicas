@@ -1,7 +1,14 @@
 @extends('layouts.baseJoyas')
 
 @section('contenido')
-  <h2> Realizar pedido</h2> 
+  <h2> Agregar un producto</h2> 
+  @if ($errors->any())
+    <ul style="color: #b00020;">
+      @foreach ($errors->all() as $error)
+        <li>{{ $error }}</li>
+      @endforeach
+    </ul>
+  @endif
   <form action="/joyas/nuevo" method="POST">
         @csrf
 
@@ -23,4 +30,5 @@
 
       <button type="submit" id="btn-registrar">Registrar joya</button>
   </form>
+  <p><a href="/joyas">&larr; Volver a la lista</a></p>
   @endsection
